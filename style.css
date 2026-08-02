@@ -70,7 +70,11 @@ nav a{
     margin:auto;
     padding:100px 30px;
 }
-
+.logo{
+    width:260px;
+    height:auto;
+    display:block;
+}
 footer{
     padding:40px;
     text-align:center;
