@@ -13,13 +13,18 @@ body{
 header{
     position:fixed;
     top:0;
+    left:0;
     width:100%;
-    background:rgba(0,0,0,.8);
-    padding:20px 40px;
+    padding:20px 50px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    z-index:100;
+
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(6px);
+
+    z-index:1000;
 }
 
 header h1{
