@@ -79,7 +79,9 @@ footer{
 
     .logo{
     width:260px;
+    max-width:260px;
     height:auto;
     display:block;
+    object-fit:contain;
 }
 
