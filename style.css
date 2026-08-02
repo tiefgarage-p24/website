@@ -75,10 +75,11 @@ footer{
     padding:40px;
     text-align:center;
     background:#000;
+ }
 
     .logo{
     width:260px;
     height:auto;
     display:block;
 }
-}
+
