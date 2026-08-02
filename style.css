@@ -34,12 +34,19 @@ nav a{
 
 .hero{
     height:100vh;
-    background:url("Chemie_Tiefgarage_P24_Feko_3000x3000_NoLogo.jpg") center center;
+
+    background-image:url("images/hero-bg.jpg");
     background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     display:flex;
-    justify-content:center;
     align-items:center;
-    text-align:center;
+    justify-content:flex-start;
+
+    padding-left:120px;
+
+    position:relative;
 }
 
 .overlay{
