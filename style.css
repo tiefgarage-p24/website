@@ -85,7 +85,46 @@ nav a:hover{
     padding:120px 8%;
 
 }
+.about-container{
 
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    gap:70px;
+}
+
+.about-image{
+
+    width:420px;
+    border-radius:12px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.about-text{
+
+    flex:1;
+}
+
+.about-text h2{
+
+    font-size:42px;
+    margin-bottom:30px;
+
+    letter-spacing:2px;
+}
+
+.about-text p{
+
+    font-size:21px;
+    line-height:1.8;
+
+    color:#d6d6d6;
+
+    margin-bottom:22px;
+}
 /* ---------- MOBILE ---------- */
 
 @media(max-width:900px){
