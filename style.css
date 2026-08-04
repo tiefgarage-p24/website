@@ -126,7 +126,7 @@ nav a:hover{
     margin-bottom:22px;
 }
 .about-highlight{
-    color:#f2c200;
+    color:#f2c200 !important;
 }
 
 .about-highlight em{
