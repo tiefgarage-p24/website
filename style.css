@@ -74,7 +74,17 @@ nav a:hover{
     background-position:center;
     background-repeat:no-repeat;
 }
+/* ---------- ABOUT ---------- */
 
+#about{
+
+    min-height:100vh;
+
+    background:#171717;
+
+    padding:120px 8%;
+
+}
 
 /* ---------- MOBILE ---------- */
 
