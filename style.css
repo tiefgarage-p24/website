@@ -62,6 +62,8 @@ nav a:hover{
 }
 nav a.active{
     color:#f2c200;
+    border-bottom:2px solid #f2c200;
+    padding-bottom:6px;
 }
 
 /* ---------- HERO ---------- */
