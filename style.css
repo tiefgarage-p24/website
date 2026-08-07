@@ -353,17 +353,19 @@ nav a{
     text-decoration:none;
 
 }
-.story-link{
+.release-actions{
     display:flex;
-    justify-content:center;
     align-items:center;
-    gap:6px;
+    gap:14px;
+}
 
-    margin:8px 0 16px;
-
-    color:#f3c300;
-    font-weight:600;
-    font-size:16px;
-    cursor:pointer;
+.story-icon{
+    color:#a8a8a8;
+    font-size:20px;
+    text-decoration:none;
     transition:.2s;
+}
+
+.story-icon:hover{
+    color:#f3c300;
 }
