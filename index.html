@@ -205,21 +205,34 @@
     </div>
 
 </div>
-    <script>
-const openStory = document.getElementById("openStory");
+<script>
+const storyLinks = document.querySelectorAll(".story-link");
 const storyModal = document.getElementById("storyModal");
 const closeStory = document.querySelector(".close");
 
-openStory.addEventListener("click", function(e) {
-    e.preventDefault();
-    storyModal.style.display = "flex";
+const modalTitle = storyModal.querySelector("h3");
+const modalText = storyModal.querySelector("p");
+
+storyLinks.forEach(link => {
+
+    link.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        modalTitle.textContent = this.dataset.title;
+        modalText.textContent = this.dataset.story;
+
+        storyModal.style.display = "flex";
+
+    });
+
 });
 
-closeStory.addEventListener("click", function() {
+closeStory.addEventListener("click", function () {
     storyModal.style.display = "none";
 });
 
-window.addEventListener("click", function(e) {
+window.addEventListener("click", function (e) {
     if (e.target === storyModal) {
         storyModal.style.display = "none";
     }
