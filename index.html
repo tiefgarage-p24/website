@@ -183,10 +183,23 @@
 
 </section>
 <script>
-document.querySelectorAll(".story-toggle").forEach(button => {
-    button.addEventListener("click", function () {
-        this.nextElementSibling.classList.toggle("active");
-    });
+const openStory = document.getElementById("openStory");
+const storyModal = document.getElementById("storyModal");
+const closeStory = document.querySelector(".close");
+
+openStory.addEventListener("click", function(e) {
+    e.preventDefault();
+    storyModal.style.display = "flex";
+});
+
+closeStory.addEventListener("click", function() {
+    storyModal.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+    if (e.target === storyModal) {
+        storyModal.style.display = "none";
+    }
 });
 </script>
     <div id="storyModal" class="modal">
