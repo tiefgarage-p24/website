@@ -357,15 +357,13 @@ nav a{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:8px;
+    gap:6px;
 
-    margin:18px 0 16px;
+    margin:12px 0 12px;
 
     color:#f3c300;
     font-weight:600;
-    font-size:18px;
+    font-size:16px;
     cursor:pointer;
     transition:.2s;
-}
-    color:#ffffff;
 }
