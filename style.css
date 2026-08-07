@@ -256,3 +256,100 @@ nav a{
     margin-right:12px;
 
 }
+/* ---------- RELEASES ---------- */
+
+#releases{
+    min-height:100vh;
+    background:#171717;
+    padding:120px 8%;
+}
+
+#releases h2{
+    text-align:center;
+    font-size:56px;
+    color:white;
+    margin-bottom:70px;
+}
+
+.release-grid{
+    display:flex;
+    justify-content:center;
+}
+
+.release-card{
+
+    width:320px;
+
+    background:#1f1f1f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+}
+
+.release-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(242,194,0,.25);
+
+}
+
+.release-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.release-card h3{
+
+    color:white;
+
+    font-size:30px;
+
+    padding:25px 25px 10px;
+
+}
+
+.artist{
+
+    color:#999;
+
+    padding:0 25px;
+
+}
+
+.release-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+.release-footer span{
+
+    color:#bbb;
+
+}
+
+.release-footer a{
+
+    color:#f2c200;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+}
