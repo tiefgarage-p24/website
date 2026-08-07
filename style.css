@@ -343,6 +343,25 @@ nav a{
     color:#bbb;
 
 }
+.release-info{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.story-link{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#f2c200;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+}
+
+.story-link:hover{
+    color:#ffd84d;
+}
 .release-footer a.play-button{
     color:#f2c200;
     font-size:30px;
