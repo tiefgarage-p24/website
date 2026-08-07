@@ -343,14 +343,12 @@ nav a{
     color:#bbb;
 
 }
-
-.release-footer a{
-
+.release-footer a.play-button{
     color:#f2c200;
-
     font-size:30px;
-
     text-decoration:none;
+}
+
 
 }
 .release-actions{
@@ -361,11 +359,14 @@ nav a{
 
 .story-icon{
     color:#a8a8a8;
-    font-size:10px;!important;
     text-decoration:none;
     transition:.2s;
 }
 
+.story-icon i{
+    font-size:15px !important;
+}
+
 .story-icon:hover{
-    color:#f3c300;
+    color:#f2c200;
 }
