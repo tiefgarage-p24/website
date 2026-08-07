@@ -355,10 +355,11 @@ nav a{
 }
 .story-link{
     display:flex;
+    justify-content:center;
     align-items:center;
     gap:8px;
 
-    margin:22px 25px 20px;
+    margin:18px 0 16px;
 
     color:#f3c300;
     font-weight:600;
@@ -366,7 +367,5 @@ nav a{
     cursor:pointer;
     transition:.2s;
 }
-
-.story-link:hover{
     color:#ffffff;
 }
