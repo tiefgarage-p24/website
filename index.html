@@ -388,7 +388,48 @@ document.getElementById("closeComingSoon").addEventListener("click", function() 
   popup.remove();
 });
 });
-</script>
+    
+// AKTUELLEN SONG AUTOMATISCH AUS DEN RELEASES ÜBERNEHMEN
+
+const heroLatestTitle = document.getElementById("heroLatestTitle");
+const heroLatestButton = document.getElementById("heroLatestButton");
+
+const releaseCards = document.querySelectorAll(".release-card");
+
+let latestReleasedCard = null;
+
+// Von hinten nach vorne suchen:
+// Der letzte veröffentlichte Release mit Spotify-Link
+// wird automatisch als aktueller Song verwendet.
+for (let i = releaseCards.length - 1; i >= 0; i--) {
+
+    const card = releaseCards[i];
+    const playButton = card.querySelector(".play-button");
+
+    if (
+        playButton &&
+        playButton.href &&
+        playButton.href.startsWith("https://open.spotify.com/")
+    ) {
+        latestReleasedCard = card;
+        break;
+    }
+}
+
+if (latestReleasedCard) {
+
+    const title = latestReleasedCard.querySelector("h3");
+    const playButton = latestReleasedCard.querySelector(".play-button");
+
+    if (title && playButton) {
+
+        heroLatestTitle.textContent = title.textContent.trim();
+
+        heroLatestButton.href = playButton.href;
+        heroLatestButton.target = "_blank";
+
+    }
+}</script>
 </body>
 
 </html>
