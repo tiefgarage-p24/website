@@ -110,7 +110,7 @@ nav a.active{
 .hero-latest{
     position:absolute !important;
     right:10% !important;
-    bottom:240px !important;
+    bottom:120px !important;
 
     display:flex !important;
     flex-direction:column !important;
