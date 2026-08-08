@@ -312,7 +312,74 @@ window.addEventListener("click", function (e) {
 
 comingSoonButton.addEventListener("click", function(e) {
     e.preventDefault();
-    alert("COMING SOON – 30.08.2026");
+    const popup = document.createElement("div");
+
+popup.innerHTML = `
+  <div style="
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+  ">
+    <div style="
+      background:#1f1f1f;
+      border:2px solid #f5c400;
+      box-shadow:0 0 35px rgba(245,196,0,0.35);
+      border-radius:18px;
+      padding:40px 50px;
+      text-align:center;
+      max-width:420px;
+      width:80%;
+    ">
+      <div style="
+        color:#f5c400;
+        font-size:16px;
+        letter-spacing:3px;
+        margin-bottom:15px;
+      ">
+        TIEFGARAGE
+      </div>
+
+      <h2 style="
+        color:white;
+        font-size:32px;
+        margin:0 0 15px 0;
+      ">
+        COMING SOON
+      </h2>
+
+      <p style="
+        color:#bbb;
+        font-size:20px;
+        margin:0 0 30px 0;
+      ">
+        30.08.2026
+      </p>
+
+      <button id="closeComingSoon" style="
+        background:#f5c400;
+        color:#111;
+        border:none;
+        border-radius:50px;
+        padding:12px 30px;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+      ">
+        OK
+      </button>
+    </div>
+  </div>
+`;
+
+document.body.appendChild(popup);
+
+document.getElementById("closeComingSoon").addEventListener("click", function() {
+  popup.remove();
+});
 });
 </script>
 </body>
