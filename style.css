@@ -109,25 +109,30 @@ nav a.active{
 }
 .hero-latest{
     position:absolute;
-    right:6%;
-    bottom:125px;
+    right:10%;
+    bottom:155px;
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:18px;
     color:white;
     z-index:10;
+    font-size:22px;
+    font-weight:700;
 }
-<div class="hero-latest">
-    <span>AKTUELLER SONG</span>
-    <strong id="heroLatestTitle">CHEMIE</strong>
-    <a id="heroLatestButton" href="#" target="_blank" aria-label="Aktuellen Song anhören">
-        <i class="fas fa-play"></i>
-    </a>
-</div>
-}
-/* ---------- ABOUT ---------- */
 
-#about{
+.hero-latest strong{
+    font-size:24px;
+    font-weight:800;
+}
+
+.hero-latest a{
+    color:#a900ff;
+    font-size:38px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+}
+-------- */#about{
 
     min-height:100vh;
 
