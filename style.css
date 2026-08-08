@@ -272,7 +272,9 @@ nav a{
 }
 
 .release-grid{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(2, 220px);
+    gap:30px;
     justify-content:center;
 }
 
