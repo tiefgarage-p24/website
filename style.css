@@ -272,10 +272,10 @@ nav a{
 }
 
 .release-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 220px);
-    gap:30px;
+    display:flex;
     justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
 .release-card{
