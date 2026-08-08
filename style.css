@@ -108,42 +108,51 @@ nav a.active{
     color:#f2c200;
 }
 .hero-latest{
-    position:absolute;
-    right:11%;
-    bottom:175px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:8px;
-    color:white;
-    z-index:10;
-    text-align:center;
+    position:absolute !important;
+    right:10% !important;
+    bottom:180px !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    gap:6px !important;
+
+    color:white !important;
+    text-align:center !important;
+    z-index:100 !important;
 }
 
 .hero-latest span{
-    color:white;
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:1px;
+    display:block !important;
+    color:white !important;
+    font-size:22px !important;
+    font-weight:800 !important;
+    letter-spacing:1px !important;
+    margin:0 !important;
 }
 
 .hero-latest strong{
-    color:white;
-    font-size:38px;
-    font-weight:800;
-    letter-spacing:1px;
+    display:block !important;
+    color:white !important;
+    font-size:38px !important;
+    font-weight:900 !important;
+    letter-spacing:1px !important;
+    margin:0 !important;
 }
 
 .hero-latest a{
-    color:#a000ff;
-    font-size:52px;
-    text-decoration:none;
-    line-height:1;
-    margin-top:5px;
+    display:block !important;
+    color:#a000ff !important;
+    font-size:52px !important;
+    line-height:1 !important;
+    text-decoration:none !important;
+    margin:4px 0 0 0 !important;
 }
 
 .hero-latest a:hover{
-    color:#c000ff;
+    color:#c000ff !important;
 }
 -------- */#about{
 
