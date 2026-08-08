@@ -117,28 +117,13 @@ nav a.active{
     color:white;
     z-index:10;
 }
-
-.hero-latest span{
-    font-size:16px;
-    letter-spacing:2px;
-    color:white;
-}
-
-.hero-latest strong{
-    font-size:22px;
-    color:white;
-}
-
-.hero-latest a{
-    color:#c000ff;
-    font-size:42px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.hero-latest a:hover{
-    transform:scale(1.1);
-    color:#ff00ff;
+<div class="hero-latest">
+    <span>AKTUELLER SONG</span>
+    <strong id="heroLatestTitle">CHEMIE</strong>
+    <a id="heroLatestButton" href="#" target="_blank" aria-label="Aktuellen Song anhören">
+        <i class="fas fa-play"></i>
+    </a>
+</div>
 }
 /* ---------- ABOUT ---------- */
 
