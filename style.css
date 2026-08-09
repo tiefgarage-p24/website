@@ -479,3 +479,40 @@ flex-direction:column;
 .close:hover{
     color:#fff;
 }
+/* ---------- FOOTER ---------- */
+
+.site-footer{
+    width:100%;
+    padding:24px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px 18px;
+    background:#0b0b0b;
+    color:#aaa;
+    font-size:14px;
+    text-align:center;
+}
+
+.site-footer a{
+    color:#aaa;
+    text-decoration:none;
+    transition:color 0.2s ease;
+}
+
+.site-footer a:hover{
+    color:#f2c400;
+}
+
+.site-footer .ki-hinweis{
+    color:#777;
+}
+
+@media (max-width:600px){
+    .site-footer{
+        font-size:13px;
+        gap:8px 12px;
+        padding:20px 15px;
+    }
+}
