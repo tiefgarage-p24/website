@@ -516,3 +516,62 @@ flex-direction:column;
         padding:20px 15px;
     }
 }
+/* ---------- RECHTLICHE SEITEN ---------- */
+
+.legal-page{
+    max-width:900px;
+    margin:0 auto;
+    padding:150px 40px 100px;
+    min-height:calc(100vh - 80px);
+}
+
+.legal-page h1{
+    font-size:56px;
+    margin-bottom:50px;
+    color:white;
+}
+
+.legal-page h2{
+    font-size:24px;
+    margin-top:40px;
+    margin-bottom:15px;
+    color:#f2c400;
+}
+
+.legal-page p{
+    font-size:18px;
+    line-height:1.7;
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.legal-page a{
+    color:#f2c400;
+    text-decoration:none;
+}
+
+.legal-page a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width:600px){
+
+    .legal-page{
+        padding:120px 22px 70px;
+    }
+
+    .legal-page h1{
+        font-size:40px;
+        margin-bottom:35px;
+    }
+
+    .legal-page h2{
+        font-size:21px;
+        margin-top:32px;
+    }
+
+    .legal-page p{
+        font-size:16px;
+        line-height:1.6;
+    }
+}
