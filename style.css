@@ -605,7 +605,7 @@ flex-direction:column;
 
     .hero{
         height:100svh;
-        background-position:right center;
+        background-position:left center;
     }
 
     .hero-content{
@@ -654,10 +654,19 @@ flex-direction:column;
         justify-content:center;
     }
 
-    nav{
-        gap:28px;
-        flex-wrap:nowrap;
-    }
+   nav{
+    gap:16px;
+    flex-wrap:nowrap;
+    width:100%;
+    justify-content:center;
+}
+
+nav a{
+    font-size:13px;
+    letter-spacing:1px;
+    padding-bottom:4px;
+    white-space:nowrap;
+}
 
     nav a{
         font-size:14px;
