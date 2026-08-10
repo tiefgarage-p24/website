@@ -245,27 +245,7 @@ margin:4px 0 0 0 !important;
 .about-highlight em{
     color:#f5f5f5;
 }
-/* ---------- MOBILE ---------- */
 
-@media(max-width:900px){
-
-header{
-
-    justify-content:center;
-    padding:25px;
-}
-
-nav{
-
-    gap:25px;
-}
-
-nav a{
-
-    font-size:15px;
-}
-
-}
 /* ---------- CONTACT ---------- */
 
 #contact{
@@ -599,7 +579,7 @@ flex-direction:column;
         line-height:1.4;
     }
 }
-/* ---------- HANDY HERO FINAL ---------- */
+/* ---------- HANDY FINAL ---------- */
 
 @media (max-width:600px){
 
@@ -613,10 +593,7 @@ flex-direction:column;
         overflow:hidden;
 
         background-size:cover;
-
-        /* mehr Parkplatz / weniger rechter Bildbereich */
-        background-position:70% center;
-
+        background-position:center center;
         background-repeat:no-repeat;
     }
 
@@ -627,15 +604,13 @@ flex-direction:column;
 
     .hero-content{
         position:relative;
-
         width:100%;
         height:100%;
 
-        padding:0 15px 50px;
+        padding:0 15px 35px;
 
         display:flex;
         flex-direction:column;
-
         justify-content:flex-end;
         align-items:center;
 
@@ -652,7 +627,7 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:115px !important;
+        top:105px !important;
         left:50% !important;
 
         transform:translateX(-50%) !important;
@@ -664,16 +639,12 @@ flex-direction:column;
 
         z-index:10 !important;
 
-        /*
-        Schwarze Fläche des Logo-Bildes
-        optisch entfernen
-        */
         mix-blend-mode:screen !important;
     }
 
 
     /* =========================
-       ZUSATZTEXT
+       SONGWRITING TEXT
        ========================= */
 
     .hero-content::before{
@@ -683,7 +654,7 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:315px !important;
+        top:300px !important;
         left:50% !important;
 
         transform:translateX(-50%) !important;
@@ -720,7 +691,6 @@ flex-direction:column;
         padding:22px 8px !important;
 
         display:flex !important;
-
         justify-content:center !important;
 
         z-index:1000 !important;
@@ -731,11 +701,10 @@ flex-direction:column;
 
         display:flex !important;
 
-        justify-content:space-between !important;
-
+        justify-content:center !important;
         align-items:center !important;
 
-        gap:0 !important;
+        gap:22px !important;
 
         flex-wrap:nowrap !important;
     }
@@ -750,7 +719,6 @@ flex-direction:column;
         white-space:nowrap !important;
 
         padding:0 !important;
-
         margin:0 !important;
     }
 
@@ -774,7 +742,6 @@ flex-direction:column;
         flex-direction:column !important;
 
         align-items:center !important;
-
         justify-content:center !important;
 
         gap:5px !important;
@@ -786,17 +753,13 @@ flex-direction:column;
 
     .hero-latest span{
         font-size:17px !important;
-
         line-height:1.2 !important;
-
         color:white !important;
     }
 
     .hero-latest strong{
         font-size:30px !important;
-
         line-height:1.15 !important;
-
         color:white !important;
     }
 
@@ -821,11 +784,9 @@ flex-direction:column;
         color:white !important;
 
         border:0 !important;
-
         border-radius:50% !important;
 
         font-size:36px !important;
-
         line-height:1 !important;
 
         text-decoration:none !important;
@@ -849,7 +810,6 @@ flex-direction:column;
         display:flex !important;
 
         justify-content:center !important;
-
         align-items:center !important;
 
         gap:15px !important;
@@ -859,7 +819,6 @@ flex-direction:column;
 
     .hero-icons a{
         font-size:29px !important;
-
         color:white !important;
     }
 
