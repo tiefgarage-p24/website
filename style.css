@@ -168,12 +168,19 @@ nav a.active{
 }
 
 .hero-latest a{
-    display:block !important;
-    color:#a000ff !important;
-    font-size:52px !important;
-    line-height:1 !important;
-    text-decoration:none !important;
-    margin:4px 0 0 0 !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+width:58px !important;
+height:58px !important;
+border:3px solid #a000ff !important;
+border-radius:50% !important;
+color:white !important;
+font-size:28px !important;
+line-height:1 !important;
+text-decoration:none !important;
+margin:8px 0 0 0 !important;
+box-sizing:border-box !important;
 }
 
 .hero-latest a:hover{
