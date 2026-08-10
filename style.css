@@ -599,7 +599,7 @@ flex-direction:column;
         line-height:1.4;
     }
 }
-/* ---------- HANDY HERO SAUBER ---------- */
+/* ---------- HANDY HERO FINAL ---------- */
 
 @media (max-width:600px){
 
@@ -609,8 +609,14 @@ flex-direction:column;
 
     .hero{
         height:100svh;
+        width:100%;
+        overflow:hidden;
+
         background-size:cover;
-        background-position:0% center;
+
+        /* mehr Parkplatz / weniger rechter Bildbereich */
+        background-position:70% center;
+
         background-repeat:no-repeat;
     }
 
@@ -621,10 +627,19 @@ flex-direction:column;
 
     .hero-content{
         position:relative;
+
+        width:100%;
         height:100%;
-        padding:0 15px 55px;
+
+        padding:0 15px 50px;
+
+        display:flex;
+        flex-direction:column;
+
         justify-content:flex-end;
         align-items:center;
+
+        overflow:hidden;
     }
 
 
@@ -637,23 +652,23 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:175px !important;
+        top:115px !important;
         left:50% !important;
 
         transform:translateX(-50%) !important;
 
-        width:82% !important;
-        max-width:430px !important;
+        width:78% !important;
+        max-width:380px !important;
 
         height:auto !important;
 
-        z-index:5 !important;
+        z-index:10 !important;
 
         /*
-        Schwarzer Hintergrund des Logos
-        optisch ausblenden
+        Schwarze Fläche des Logo-Bildes
+        optisch entfernen
         */
-        mix-blend-mode:screen;
+        mix-blend-mode:screen !important;
     }
 
 
@@ -668,7 +683,7 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:350px !important;
+        top:315px !important;
         left:50% !important;
 
         transform:translateX(-50%) !important;
@@ -682,11 +697,11 @@ flex-direction:column;
         font-size:15px !important;
         font-weight:600 !important;
 
-        letter-spacing:.3px !important;
+        letter-spacing:.2px !important;
 
         white-space:nowrap !important;
 
-        z-index:6 !important;
+        z-index:11 !important;
     }
 
 
@@ -695,19 +710,28 @@ flex-direction:column;
        ========================= */
 
     header{
-        padding:22px 5px !important;
+        position:fixed !important;
+
+        top:0 !important;
+        left:0 !important;
+
+        width:100% !important;
+
+        padding:22px 8px !important;
+
+        display:flex !important;
 
         justify-content:center !important;
 
-        width:100% !important;
+        z-index:1000 !important;
     }
 
     nav{
-        display:flex !important;
-
         width:100% !important;
 
-        justify-content:space-evenly !important;
+        display:flex !important;
+
+        justify-content:space-between !important;
 
         align-items:center !important;
 
@@ -717,6 +741,8 @@ flex-direction:column;
     }
 
     nav a{
+        flex:0 0 auto !important;
+
         font-size:11px !important;
 
         letter-spacing:1px !important;
@@ -724,6 +750,8 @@ flex-direction:column;
         white-space:nowrap !important;
 
         padding:0 !important;
+
+        margin:0 !important;
     }
 
 
@@ -734,10 +762,10 @@ flex-direction:column;
     .hero-latest{
         position:absolute !important;
 
-        right:0 !important;
         left:0 !important;
+        right:0 !important;
 
-        bottom:150px !important;
+        bottom:145px !important;
 
         width:100% !important;
 
@@ -749,19 +777,25 @@ flex-direction:column;
 
         justify-content:center !important;
 
-        gap:6px !important;
+        gap:5px !important;
 
-        z-index:100 !important;
+        z-index:50 !important;
+
+        text-align:center !important;
     }
 
     .hero-latest span{
         font-size:17px !important;
+
+        line-height:1.2 !important;
 
         color:white !important;
     }
 
     .hero-latest strong{
         font-size:30px !important;
+
+        line-height:1.15 !important;
 
         color:white !important;
     }
@@ -786,7 +820,7 @@ flex-direction:column;
 
         color:white !important;
 
-        border:none !important;
+        border:0 !important;
 
         border-radius:50% !important;
 
@@ -794,7 +828,7 @@ flex-direction:column;
 
         line-height:1 !important;
 
-        box-shadow:none !important;
+        text-decoration:none !important;
     }
 
 
@@ -805,9 +839,8 @@ flex-direction:column;
     .hero-icons{
         position:absolute !important;
 
-        bottom:55px !important;
-
         left:50% !important;
+        bottom:45px !important;
 
         transform:translateX(-50%) !important;
 
@@ -819,13 +852,15 @@ flex-direction:column;
 
         align-items:center !important;
 
-        gap:16px !important;
+        gap:15px !important;
 
-        z-index:100 !important;
+        z-index:50 !important;
     }
 
     .hero-icons a{
         font-size:29px !important;
+
+        color:white !important;
     }
 
 }
