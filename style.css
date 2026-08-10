@@ -593,7 +593,7 @@ flex-direction:column;
         overflow:hidden;
 
         background-size:cover;
-        background-position:center center;
+        background-position:35% center;
         background-repeat:no-repeat;
     }
 
@@ -627,12 +627,12 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:105px !important;
-        left:50% !important;
+        top:85px !important;
+        left:% !important;
 
         transform:translateX(-50%) !important;
 
-        width:78% !important;
+        width:72% !important;
         max-width:380px !important;
 
         height:auto !important;
@@ -654,7 +654,7 @@ flex-direction:column;
 
         position:absolute !important;
 
-        top:300px !important;
+        top:270px !important;
         left:50% !important;
 
         transform:translateX(-50%) !important;
@@ -665,7 +665,7 @@ flex-direction:column;
 
         color:white !important;
 
-        font-size:15px !important;
+        font-size:14px !important;
         font-weight:600 !important;
 
         letter-spacing:.2px !important;
@@ -697,22 +697,17 @@ flex-direction:column;
     }
 
     nav{
-        width:100% !important;
-
-        display:flex !important;
-
-        justify-content:center !important;
-        align-items:center !important;
-
-        gap:22px !important;
-
-        flex-wrap:nowrap !important;
-    }
-
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:14px !important;
+    flex-wrap:nowrap !important;
+}
     nav a{
         flex:0 0 auto !important;
 
-        font-size:11px !important;
+        font-size:10px !important;
 
         letter-spacing:1px !important;
 
