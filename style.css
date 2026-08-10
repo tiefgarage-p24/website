@@ -599,204 +599,50 @@ flex-direction:column;
         line-height:1.4;
     }
 }
-/* ---------- HANDY HERO ---------- */
+/* ---------- HANDY HERO SAUBER ---------- */
 
 @media (max-width:600px){
 
+    /* HERO */
     .hero{
         height:100svh;
-        background-position:left center;
+        background-position:center center;
+        background-size:cover;
     }
 
     .hero-content{
         position:relative;
         height:100%;
-        padding:0 20px 70px;
+        padding:0 20px 55px;
         justify-content:flex-end;
         align-items:center;
     }
 
-    /* LOGO */
+
+    /* LOGO NICHT ZUSÄTZLICH EINBLENDEN
+       - Logo ist bereits Bestandteil des Hero-Bildes */
     .hero-logo{
-        display:block;
-        position:absolute;
-        top:125px;
-        left:50%;
-        transform:translateX(-50%);
-        width:82%;
-        max-width:360px;
-        height:auto;
-
-        /* schwarzer Hintergrund des Logos optisch entfernen */
-        mix-blend-mode:screen;
+        display:none !important;
     }
 
-    /* Songwriting & Collaborative Production */
     .hero-content::before{
-        content:"Songwriting & Collaborative Production.";
-        position:absolute;
-        top:calc(125px + 145px);
-        left:50%;
-        transform:translateX(-50%);
-        width:90%;
-        text-align:center;
-
-        color:white;
-        font-size:14px;
-        font-weight:600;
-        letter-spacing:.5px;
-        white-space:nowrap;
+        display:none !important;
+        content:none !important;
     }
 
-    /* NAVIGATION */
-    header{
-        padding:22px 10px;
-        justify-content:center;
-    }
-
-   nav{
-    gap:16px;
-    flex-wrap:nowrap;
-    width:100%;
-    justify-content:center;
-}
-
-nav a{
-    font-size:13px;
-    letter-spacing:1px;
-    padding-bottom:4px;
-    white-space:nowrap;
-}
-
-    nav a{
-        font-size:14px;
-        letter-spacing:1.5px;
-        padding-bottom:4px;
-    }
-
-    /* AKTUELLER SONG */
-    .hero-latest{
-        right:0 !important;
-        left:0 !important;
-        bottom:155px !important;
-        width:100% !important;
-    }
-
-    .hero-latest span{
-        font-size:17px !important;
-    }
-
-    .hero-latest strong{
-        font-size:30px !important;
-    }
-
-    /* PLAY BUTTON */
-    .hero-latest a{
-        display:flex !important;
-        align-items:center !important;
-        justify-content:center !important;
-
-        width:78px !important;
-        height:78px !important;
-
-        margin:8px 0 0 0 !important;
-
-        background:#a000ff !important;
-        color:white !important;
-
-        border:none !important;
-        border-radius:50% !important;
-
-        font-size:40px !important;
-        line-height:1 !important;
-
-        box-shadow:none !important;
-    }
-
-    .hero-latest a:hover{
-        background:#b000ff !important;
-        color:white !important;
-    }
-
-    /* SOCIAL ICONS */
-    .hero-icons{
-        position:absolute;
-        bottom:48px;
-        left:50%;
-        transform:translateX(-50%);
-
-        gap:16px;
-        width:100%;
-        justify-content:center;
-    }
-
-    .hero-icons a{
-        font-size:29px;
-    }
-
-}
-
-}
-
-}
-/* ---------- HANDY ÜBER / ABOUT ---------- */
-
-@media (max-width:600px){
-
-    #about{
-        min-height:auto;
-        padding:90px 20px 60px;
-        overflow:hidden;
-    }
-
-    .about-container{
-        width:100%;
-        max-width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:30px;
-    }
-
-    .about-image{
-        width:100%;
-        max-width:340px;
-        height:auto;
-        display:block;
-    }
-
-    .about-text{
-        width:100%;
-        max-width:100%;
-        text-align:left;
-    }
-
-    .about-text h2{
-        font-size:32px;
-        line-height:1.2;
-        margin-bottom:22px;
-    }
-
-    .about-text p{
-        font-size:16px;
-        line-height:1.6;
-        margin-bottom:18px;
-    }
-
-}
-/* ---------- MOBILE HERO FINAL ---------- */
-
-@media (max-width:600px){
 
     /* NAVIGATION */
     header{
         padding:22px 5px !important;
+        justify-content:center !important;
     }
 
     nav{
+        display:flex !important;
         width:100% !important;
         justify-content:center !important;
-        gap:9px !important;
+        align-items:center !important;
+        gap:14px !important;
         flex-wrap:nowrap !important;
     }
 
@@ -808,9 +654,71 @@ nav a{
     }
 
 
-    /* HERO BILD - weiter nach links */
-    .hero{
-        background-position:15% center !important;
+    /* AKTUELLER SONG */
+    .hero-latest{
+        right:0 !important;
+        left:0 !important;
+        bottom:145px !important;
+        width:100% !important;
+
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+    }
+
+    .hero-latest span{
+        font-size:17px !important;
+    }
+
+    .hero-latest strong{
+        font-size:30px !important;
+    }
+
+
+    /* PLAY BUTTON */
+    .hero-latest a{
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        width:70px !important;
+        height:70px !important;
+
+        margin:8px 0 0 0 !important;
+
+        background:#a000ff !important;
+        color:#fff !important;
+
+        border:none !important;
+        border-radius:50% !important;
+
+        font-size:36px !important;
+        line-height:1 !important;
+
+        box-shadow:none !important;
+    }
+
+
+    /* SOCIAL ICONS */
+    .hero-icons{
+        position:absolute !important;
+
+        bottom:42px !important;
+        left:50% !important;
+        transform:translateX(-50%) !important;
+
+        width:100% !important;
+
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        gap:16px !important;
+    }
+
+    .hero-icons a{
+        font-size:29px !important;
     }
 
 }
