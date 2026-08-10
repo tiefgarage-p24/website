@@ -171,18 +171,21 @@ nav a.active{
 display:flex !important;
 align-items:center !important;
 justify-content:center !important;
-width:58px !important;
-height:58px !important;
-border:3px solid #a000ff !important;
+
+width:74px !important;
+height:74px !important;
+
+background:#a000ff !important;
+border:2px solid #a000ff !important;
 border-radius:50% !important;
+
 color:white !important;
-font-size:28px !important;
+font-size:38px !important;
 line-height:1 !important;
 text-decoration:none !important;
-margin:8px 0 0 0 !important;
-box-sizing:border-box !important;
-}
 
+margin:4px 0 0 0 !important;
+}
 .hero-latest a:hover{
     color:#c000ff !important;
 }
