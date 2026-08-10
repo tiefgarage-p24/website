@@ -605,104 +605,127 @@ flex-direction:column;
 
     .hero{
         height:100svh;
-        min-height:650px;
-        background-position:center center;
-        overflow:hidden;
+        background-position:right center;
     }
 
     .hero-content{
         position:relative;
         height:100%;
-        padding:0 15px 30px;
+        padding:0 20px 70px;
         justify-content:flex-end;
         align-items:center;
-        overflow:hidden;
     }
 
+    /* LOGO */
+    .hero-logo{
+        display:block;
+        position:absolute;
+        top:125px;
+        left:50%;
+        transform:translateX(-50%);
+        width:82%;
+        max-width:360px;
+        height:auto;
 
-    /* ---------- NAVIGATION ---------- */
+        /* schwarzer Hintergrund des Logos optisch entfernen */
+        mix-blend-mode:screen;
+    }
 
+    /* Songwriting & Collaborative Production */
+    .hero-content::before{
+        content:"Songwriting & Collaborative Production.";
+        position:absolute;
+        top:calc(125px + 145px);
+        left:50%;
+        transform:translateX(-50%);
+        width:90%;
+        text-align:center;
+
+        color:white;
+        font-size:14px;
+        font-weight:600;
+        letter-spacing:.5px;
+        white-space:nowrap;
+    }
+
+    /* NAVIGATION */
     header{
-        position:relative;
-        z-index:200;
-        padding:18px 4px;
+        padding:22px 10px;
         justify-content:center;
     }
 
     nav{
-        width:100%;
-        gap:18px;
-        justify-content:center;
+        gap:28px;
         flex-wrap:nowrap;
     }
 
     nav a{
-        font-size:10px;
-        letter-spacing:1px;
+        font-size:14px;
+        letter-spacing:1.5px;
         padding-bottom:4px;
-        white-space:nowrap;
     }
 
-
-    /* ---------- LOGO ---------- */
-
-    .hero-logo{
-        display:block;
-        position:absolute;
-
-        top:70px;
-        left:50%;
-
-        transform:translateX(-50%);
-
-        width:72vw !important;
-        max-width:300px !important;
-
-        height:auto !important;
-    }
-
-
-    /* ---------- AKTUELLER SONG ---------- */
-
+    /* AKTUELLER SONG */
     .hero-latest{
         right:0 !important;
         left:0 !important;
-
-        bottom:145px !important;
-
+        bottom:155px !important;
         width:100% !important;
-
-        text-align:center;
     }
 
     .hero-latest span{
-        font-size:16px !important;
+        font-size:17px !important;
     }
 
     .hero-latest strong{
         font-size:30px !important;
     }
 
-
-    /* ---------- PLAY BUTTON ---------- */
-
+    /* PLAY BUTTON */
     .hero-latest a{
-        font-size:52px !important;
-        margin-top:4px !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        width:78px !important;
+        height:78px !important;
+
+        margin:8px 0 0 0 !important;
+
+        background:#a000ff !important;
+        color:white !important;
+
+        border:none !important;
+        border-radius:50% !important;
+
+        font-size:40px !important;
+        line-height:1 !important;
+
+        box-shadow:none !important;
     }
 
+    .hero-latest a:hover{
+        background:#b000ff !important;
+        color:white !important;
+    }
 
-    /* ---------- SOCIAL ICONS ---------- */
-
+    /* SOCIAL ICONS */
     .hero-icons{
+        position:absolute;
+        bottom:48px;
+        left:50%;
+        transform:translateX(-50%);
+
+        gap:16px;
         width:100%;
         justify-content:center;
-        gap:14px;
     }
 
     .hero-icons a{
-        font-size:28px;
+        font-size:29px;
     }
+
+}
 
 }
 
