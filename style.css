@@ -784,3 +784,33 @@ nav a{
     }
 
 }
+/* ---------- MOBILE HERO FINAL ---------- */
+
+@media (max-width:600px){
+
+    /* NAVIGATION */
+    header{
+        padding:22px 5px !important;
+    }
+
+    nav{
+        width:100% !important;
+        justify-content:center !important;
+        gap:9px !important;
+        flex-wrap:nowrap !important;
+    }
+
+    nav a{
+        font-size:12px !important;
+        letter-spacing:1px !important;
+        white-space:nowrap !important;
+        padding:0 !important;
+    }
+
+
+    /* HERO BILD - weiter nach links */
+    .hero{
+        background-position:15% center !important;
+    }
+
+}
