@@ -983,39 +983,35 @@ flex-direction:column;
 @media (max-width:600px){
 
     #about{
-        min-height:100svh !important;
-        height:100svh !important;
+        width:100% !important;
+        min-height:0 !important;
+        height:auto !important;
         padding:0 !important;
         margin:0 !important;
-
-        display:flex !important;
-        flex-direction:column !important;
-
-        overflow:hidden !important;
+        overflow:visible !important;
+        background:#171717 !important;
     }
 
     #about .about-container{
         width:100% !important;
-        height:100% !important;
         max-width:none !important;
-
+        height:auto !important;
         margin:0 !important;
         padding:0 !important;
 
         display:flex !important;
         flex-direction:column !important;
-
         gap:0 !important;
     }
 
-    /* BILD – 40% */
-
     #about .about-image{
         width:100% !important;
-        height:40% !important;
+        height:40svh !important;
+        min-height:0 !important;
 
-        flex:0 0 40% !important;
+        flex:none !important;
 
+        display:block !important;
         object-fit:cover !important;
         object-position:center center !important;
 
@@ -1023,17 +1019,16 @@ flex-direction:column;
         box-shadow:none !important;
     }
 
-    /* TEXT – 60% */
-
     #about .about-text{
         width:100% !important;
-        height:60% !important;
+        height:auto !important;
+        min-height:60svh !important;
 
-        flex:0 0 60% !important;
+        flex:none !important;
 
-        padding:25px 22px 30px !important;
+        padding:25px 22px 40px !important;
 
-        overflow-y:auto !important;
+        overflow:visible !important;
 
         text-align:center !important;
         box-sizing:border-box !important;
@@ -1042,19 +1037,14 @@ flex-direction:column;
     #about .about-text h2{
         font-size:28px !important;
         line-height:1.15 !important;
-
         margin:0 0 18px 0 !important;
-
-        letter-spacing:1px !important;
     }
 
     #about .about-text p{
         font-size:15px !important;
         line-height:1.5 !important;
-
         margin:0 0 14px 0 !important;
     }
 }
-
 
    
