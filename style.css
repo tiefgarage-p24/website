@@ -818,3 +818,15 @@ flex-direction:column;
     }
 
 }
+/* ---------- MOBILE HERO BACKGROUND ---------- */
+
+@media (max-width: 600px){
+
+    .hero{
+        background-image: url("images/dein-mobile-hero.png") !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+
+}
