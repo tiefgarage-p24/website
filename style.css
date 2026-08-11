@@ -938,53 +938,43 @@ flex-direction:column;
 }
 
 
-/* ---------- STORY POPUP HANDY ---------- */
+/* ---------- STORY POPUP HANDY TEST ---------- */
 
 @media (max-width:600px){
 
-    .modal{
-        padding:20px;
+    #storyModal{
+        position:fixed !important;
+        inset:0 !important;
+
+        width:100vw !important;
+        height:100vh !important;
+
+        display:flex !important;
+
+        justify-content:center !important;
+        align-items:center !important;
+
+        padding:20px !important;
+
+        box-sizing:border-box !important;
+
+        z-index:999999 !important;
     }
-
-    .modal-content{
-        width:100%;
-        max-width:380px;
-
-        max-height:75vh;
-
-        padding:32px 22px 24px;
-
-        border-radius:20px;
-    }
-
-    .modal-content h2{
-        font-size:26px;
-        margin-bottom:16px;
-    }
-
-    .modal-content h3{
-        font-size:21px;
-        margin-bottom:15px;
-    }
-
-    .modal-content p{
-        font-size:17px;
-        line-height:1.5;
-    }
-
-    .close{
-        top:10px;
-        right:15px;
-        font-size:30px;
-    }
-
-}
-@media (max-width:600px){
 
     #storyModal .modal-content{
-        width:calc(100% - 40px) !important;
-        max-width:380px !important;
-        margin:0 auto !important;
+        position:relative !important;
+
+        width:calc(100vw - 40px) !important;
+        max-width:340px !important;
+
+        margin:0 !important;
+
+        padding:25px 20px !important;
+
+        box-sizing:border-box !important;
+
+        max-height:75vh !important;
+        overflow-y:auto !important;
     }
 
 }
