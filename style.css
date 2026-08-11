@@ -1006,7 +1006,7 @@ flex-direction:column;
 
     #about .about-image{
         width:100% !important;
-        height:40svh !important;
+        height:45svh !important;
         min-height:0 !important;
 
         flex:none !important;
@@ -1035,10 +1035,10 @@ flex-direction:column;
     }
 
     #about .about-text h2{
-        font-size:28px !important;
-        line-height:1.15 !important;
-        margin:0 0 18px 0 !important;
-    }
+    font-size:25px !important;
+    margin-bottom:18px !important;
+    white-space:nowrap !important;
+}
 
     #about .about-text p{
         font-size:15px !important;
