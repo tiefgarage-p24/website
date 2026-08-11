@@ -950,3 +950,12 @@ flex-direction:column;
     }
 
 }
+@media (max-width:600px){
+
+    #storyModal .modal-content{
+        width:calc(100% - 40px) !important;
+        max-width:380px !important;
+        margin:0 auto !important;
+    }
+
+}
