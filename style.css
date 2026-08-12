@@ -716,7 +716,7 @@ flex-direction:column;
         display:flex;
         justify-content:center;
         align-items:center;
-        gap:22px;
+        gap:14px;
         flex-wrap:nowrap;
     }
 
@@ -1183,6 +1183,18 @@ flex-direction:column;
     #about .about-text{
         min-height:75svh !important;
         padding-bottom:55px !important;
+    }
+
+}
+/* ==================================================
+   MOBILE NAVIGATION – PLATZ FÜR ÜBER & KONTAKT
+   ================================================== */
+
+@media (max-width:600px){
+
+    #about,
+    #contact{
+        padding-top:80px !important;
     }
 
 }
