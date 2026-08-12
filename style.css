@@ -700,16 +700,24 @@ flex-direction:column;
 
 
     /* NAVIGATION */
-    header{
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        padding:22px 0;
-        display:flex;
-        justify-content:center;
-        z-index:200;
-    }
+  header{
+    position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+
+    width:100% !important;
+    height:70px !important;
+
+    padding:0 !important;
+
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+
+    background:#111 !important;
+
+    z-index:9999 !important;
+}
 
     nav{
         width:100%;
