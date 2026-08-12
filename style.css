@@ -1174,3 +1174,15 @@ flex-direction:column;
     }
 
 }
+/* ==================================================
+   ÜBER – MEHR PLATZ FÜR DEN LETZTEN TEXT
+   ================================================== */
+
+@media (max-width:600px){
+
+    #about .about-text{
+        min-height:75svh !important;
+        padding-bottom:55px !important;
+    }
+
+}
