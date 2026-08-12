@@ -714,18 +714,20 @@ nav a.active{
        ---------------------------------------------- */
 
     .hero{
-        height:100svh;
+    height:100svh;
 
-        width:100%;
+    width:100%;
 
-        overflow:hidden;
+    overflow:hidden;
 
-        background-size:cover;
+    background-image:url("images/dein-mobile-hero.png");
 
-        background-position:55% center;
+    background-size:cover;
 
-        background-repeat:no-repeat;
-    }
+    background-position:center;
+
+    background-repeat:no-repeat;
+}
 
     .hero-content{
         position:relative;
