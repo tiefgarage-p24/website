@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Font Awesome 6 Free';
     src: url('fonts/fa-solid-900.woff2') format('woff2');
@@ -20,7 +21,11 @@
     font-style: normal;
     font-display: block;
 }
-/* ---------- RESET ---------- */
+
+
+/* ==================================================
+   RESET
+   ================================================== */
 
 *{
     margin:0;
@@ -31,26 +36,22 @@
 html{
     scroll-behavior:smooth;
 }
-#about{
-    scroll-margin-top:0px;
-}
 
 body{
-
     font-family:'InterLocal',sans-serif;
     background:#111;
     color:white;
 }
 
 
-/* ---------- NAVIGATION ---------- */
+/* ==================================================
+   NAVIGATION – DESKTOP
+   ================================================== */
 
 header{
-
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
 
     padding:35px 70px;
@@ -60,22 +61,26 @@ header{
 
     z-index:1000;
 
-    background:linear-gradient(to bottom,rgba(0,0,0,.75),rgba(0,0,0,0));
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,0)
+    );
 }
 
 nav{
-
     display:flex;
     gap:55px;
 }
 
 nav a{
-
     color:white;
     text-decoration:none;
+
     letter-spacing:2px;
     font-size:18px;
     font-weight:500;
+
     transition:.3s;
 
     border-bottom:2px solid transparent;
@@ -83,21 +88,24 @@ nav a{
 }
 
 nav a:hover{
-
     color:#f2c200;
 }
+
 nav a.active{
     color:#f2c200;
     border-bottom:2px solid #f2c200;
     padding-bottom:6px;
 }
 
-/* ---------- HERO ---------- */
+
+/* ==================================================
+   HERO
+   ================================================== */
 
 .hero{
-
     width:100%;
     height:100vh;
+
     position:relative;
 
     background-image:url("images/hero-neu.png");
@@ -105,12 +113,16 @@ nav a.active{
     background-position:center;
     background-repeat:no-repeat;
 }
+
 .hero-content{
     height:100%;
+
     display:flex;
     flex-direction:column;
+
     justify-content:flex-end;
     align-items:flex-start;
+
     padding:0 8% 70px;
 }
 
@@ -132,105 +144,126 @@ nav a.active{
 .hero-icons a:hover{
     color:#f2c200;
 }
+
+
+/* ==================================================
+   AKTUELLER SONG – HERO
+   ================================================== */
+
 .hero-latest{
-    position:absolute !important;
-    right:13% !important;
-    bottom:110px !important;
+    position:absolute;
 
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:center !important;
+    right:13%;
+    bottom:110px;
 
-    gap:6px !important;
+    display:flex;
+    flex-direction:column;
 
-    color:white !important;
-    text-align:center !important;
-    z-index:100 !important;
+    align-items:center;
+    justify-content:center;
+
+    gap:6px;
+
+    color:white;
+    text-align:center;
+
+    z-index:100;
 }
 
 .hero-latest span{
-    display:block !important;
-    color:white !important;
-    font-size:22px !important;
-    font-weight:800 !important;
-    letter-spacing:1px !important;
-    margin:0 !important;
+    display:block;
+
+    color:white;
+
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:1px;
+
+    margin:0;
 }
 
 .hero-latest strong{
-    display:block !important;
-    color:white !important;
-    font-size:38px !important;
-    font-weight:900 !important;
-    letter-spacing:1px !important;
-    margin:0 !important;
+    display:block;
+
+    color:white;
+
+    font-size:38px;
+    font-weight:900;
+    letter-spacing:1px;
+
+    margin:0;
 }
 
 .hero-latest a{
-display:flex !important;
-align-items:center !important;
-justify-content:center !important;
+    display:flex;
 
-width:50px !important;
-height:50px !important;
+    align-items:center;
+    justify-content:center;
 
-background:#a000ff !important;
-border:2px solid #a000ff !important;
-border-radius:50% !important;
+    width:50px;
+    height:50px;
 
-color:white !important;
-font-size:38px !important;
-line-height:1 !important;
-text-decoration:none !important;
+    background:#a000ff;
+    border:2px solid #a000ff;
+    border-radius:50%;
 
-margin:4px 0 0 0 !important;
+    color:white;
+    font-size:38px;
+    line-height:1;
+
+    text-decoration:none;
+
+    margin:4px 0 0 0;
 }
+
 .hero-latest a:hover{
-    color:#c000ff !important;
+    color:#c000ff;
 }
--------- */#about{
 
+
+/* ==================================================
+   ÜBER
+   ================================================== */
+
+#about{
     min-height:100vh;
 
     background:#171717;
 
     padding:90px 8%;
-
 }
-.about-container{
 
+.about-container{
     max-width:1200px;
     margin:auto;
 
     display:flex;
     align-items:center;
+
     gap:50px;
 }
 
 .about-image{
-
     width:420px;
+
     border-radius:12px;
 
     box-shadow:0 20px 50px rgba(0,0,0,.45);
 }
 
 .about-text{
-
     flex:1;
 }
 
 .about-text h2{
-
     font-size:42px;
+
     margin-bottom:30px;
 
     letter-spacing:2px;
 }
 
 .about-text p{
-
     font-size:18px;
     line-height:1.8;
 
@@ -238,6 +271,7 @@ margin:4px 0 0 0 !important;
 
     margin-bottom:22px;
 }
+
 .about-highlight strong{
     color:#f2c200;
 }
@@ -246,10 +280,12 @@ margin:4px 0 0 0 !important;
     color:#f5f5f5;
 }
 
-/* ---------- CONTACT ---------- */
+
+/* ==================================================
+   KONTAKT
+   ================================================== */
 
 #contact{
-
     min-height:100vh;
 
     background:#111;
@@ -257,96 +293,91 @@ margin:4px 0 0 0 !important;
     display:flex;
 
     justify-content:center;
-
     align-items:center;
 
     padding:80px 8%;
-
 }
 
 .contact-container{
-
     max-width:700px;
 
     text-align:center;
-
 }
 
 .contact-container h2{
-
     font-size:56px;
 
     color:white;
 
     margin-bottom:30px;
-
 }
 
 .contact-container p{
-
     font-size:24px;
-
     line-height:1.8;
 
     color:#ddd;
 
     margin-bottom:25px;
-
 }
 
 .contact-container strong{
-
     color:white;
-
 }
 
 .contact-mail a{
-
     color:#f2c200;
 
     text-decoration:none;
 
     font-size:24px;
-
     font-weight:600;
-
 }
 
 .contact-mail i{
-
     margin-right:12px;
-
 }
-/* ---------- RELEASES ---------- */
+
+
+/* ==================================================
+   RELEASES
+   ================================================== */
 
 #releases{
     min-height:100vh;
+
     background:#171717;
+
     padding:120px 8%;
 }
 
 #releases h2{
     text-align:center;
+
     font-size:56px;
+
     color:white;
+
     margin-bottom:70px;
 }
 
 .release-grid{
     display:flex;
+
     justify-content:center;
+
     gap:40px;
+
     flex-wrap:wrap;
 }
 
 .release-card{
-
     width:220px;
 
     background:#1f1f1f;
 
     display:flex;
-flex-direction:column;
+    flex-direction:column;
 
     border-radius:18px;
 
@@ -355,111 +386,129 @@ flex-direction:column;
     transition:.3s;
 
     box-shadow:0 0 20px rgba(0,0,0,.35);
-
 }
 
 .release-card:hover{
-
     transform:translateY(-8px);
 
-    box-shadow:0 0 25px rgba(242,194,0,.25);
-
+    box-shadow:
+        0 0 25px rgba(242,194,0,.25);
 }
 
 .release-card img{
-
     width:100%;
 
     display:block;
-
 }
 
 .release-card h3{
-
     color:white;
 
     font-size:26px;
+
     height:84px;
 
     padding:14px 20px 8px;
-
 }
 
 .artist{
-
     color:#999;
 
     padding:0 20px;
-
 }
 
 .release-footer{
-
     display:flex;
 
     justify-content:space-between;
-
     align-items:center;
 
     padding:25px;
-    margin-top:auto;
 
+    margin-top:auto;
 }
 
 .release-footer span{
-
     color:#bbb;
-
 }
+
 .release-info{
     display:flex;
+
     flex-direction:column;
+
     gap:8px;
 }
 
 .story-link{
     display:flex;
+
     align-items:center;
+
     gap:6px;
+
     color:#f2c200;
+
     text-decoration:none;
+
     font-size:15px;
+
     font-weight:600;
 }
 
 .story-link:hover{
     color:#ffd84d;
 }
+
 .release-footer a.play-button{
     color:#f2c200;
+
     font-size:38px;
+
     text-decoration:none;
 }
 
 
+/* ==================================================
+   STORY POPUP
+   ================================================== */
+
 .modal{
     display:none;
+
     position:fixed;
+
     inset:0;
+
     background:rgba(0,0,0,.75);
+
     justify-content:center;
     align-items:center;
+
     z-index:9999;
 }
 
 .modal-content{
     background:#1f1f1f;
+
     width:90%;
     max-width:520px;
+
     padding:30px;
+
     border-radius:18px;
+
     color:white;
+
     position:relative;
-    box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5);
 }
 
 .modal-content h2{
     color:#f2c200;
+
     margin-bottom:15px;
 }
 
@@ -469,132 +518,61 @@ flex-direction:column;
 
 .modal-content p{
     line-height:1.7;
+
     color:#ddd;
 }
-/* ---------- STORY POPUP HANDY ---------- */
 
-@media (max-width:600px){
-
-    .modal-content{
-        width:85% !important;
-        max-width:340px !important;
-
-        padding:25px 20px !important;
-
-        border-radius:18px !important;
-    }
-
-    .modal-content h2{
-        font-size:24px !important;
-        margin-bottom:12px !important;
-    }
-
-    .modal-content h3{
-        font-size:18px !important;
-        line-height:1.3 !important;
-        margin-bottom:15px !important;
-    }
-
-    .modal-content p{
-        font-size:15px !important;
-        line-height:1.5 !important;
-    }
-
-}
 .close{
     position:absolute;
+
     top:15px;
     right:20px;
+
     font-size:30px;
+
     cursor:pointer;
+
     color:#bbb;
 }
 
 .close:hover{
     color:#fff;
 }
-/* ---------- MOBILE RELEASES ---------- */
 
-@media (max-width:600px){
 
-    #releases{
-        padding:100px 20px 60px;
-    }
-
-    #releases h2{
-        font-size:38px;
-        margin-bottom:40px;
-    }
-
-    /* Karten untereinander */
-    .release-grid{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:30px;
-    }
-
-    .release-card{
-        width:280px;
-        max-width:100%;
-    }
-
-    /* STORY POPUP */
-    .modal{
-        padding:20px;
-    }
-
-    .modal-content{
-        width:90%;
-        max-width:400px;
-        max-height:75vh;
-        overflow-y:auto;
-        padding:22px;
-        margin:auto;
-    }
-
-    .modal-content h2{
-        font-size:24px;
-        margin-bottom:12px;
-    }
-
-    .modal-content h3{
-        font-size:18px;
-        margin-bottom:14px;
-    }
-
-    .modal-content p{
-        font-size:14px;
-        line-height:1.5;
-    }
-
-    .close{
-        top:10px;
-        right:14px;
-        font-size:26px;
-    }
-
-}
-/* ---------- FOOTER ---------- */
+/* ==================================================
+   FOOTER
+   ================================================== */
 
 .site-footer{
     width:100%;
+
     padding:24px 20px;
+
     display:flex;
+
     justify-content:center;
     align-items:center;
+
     flex-wrap:wrap;
+
     gap:8px 18px;
+
     background:#0b0b0b;
+
     color:#aaa;
+
     font-size:14px;
+
     text-align:center;
 }
 
 .site-footer a{
     color:#aaa;
+
     text-decoration:none;
-    transition:color 0.2s ease;
+
+    transition:color .2s ease;
 }
 
 .site-footer a:hover{
@@ -605,43 +583,49 @@ flex-direction:column;
     color:#777;
 }
 
-@media (max-width:600px){
-    .site-footer{
-        font-size:13px;
-        gap:8px 12px;
-        padding:20px 15px;
-    }
-}
-/* ---------- RECHTLICHE SEITEN ---------- */
+
+/* ==================================================
+   RECHTLICHE SEITEN
+   ================================================== */
 
 .legal-page{
     max-width:900px;
+
     margin:0 auto;
+
     padding:90px 40px 20px;
 }
 
 .legal-page h1{
     font-size:32px;
+
     margin-bottom:18px;
+
     color:white;
 }
 
 .legal-page h2{
     font-size:17px;
+
     margin-top:12px;
     margin-bottom:4px;
+
     color:#f2c400;
 }
 
 .legal-page p{
     font-size:13px;
+
     line-height:1.3;
+
     color:#ddd;
+
     margin-bottom:6px;
 }
 
 .legal-page a{
     color:#f2c400;
+
     text-decoration:none;
 }
 
@@ -649,512 +633,57 @@ flex-direction:column;
     text-decoration:underline;
 }
 
-@media (max-width:600px){
 
-    .legal-page{
-        padding:100px 20px 30px;
-    }
-
-    .legal-page h1{
-        font-size:30px;
-        margin-bottom:20px;
-    }
-
-    .legal-page h2{
-        font-size:18px;
-        margin-top:18px;
-    }
-
-    .legal-page p{
-        font-size:14px;
-        line-height:1.4;
-    }
-}
 /* ==================================================
-   HANDY HERO – FINAL
+   MOBILE – EINZIGER MOBILE BLOCK
    ================================================== */
 
 @media (max-width:600px){
 
-    /* MOBILE HERO BILD */
-    .hero{
-        height:100svh;
+    /* ----------------------------------------------
+       ALLGEMEIN
+       ---------------------------------------------- */
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    body{
         width:100%;
-        overflow:hidden;
-
-        background-image:url("images/dein-mobile-hero.png");
-        background-size:cover;
-        background-position:center center;
-        background-repeat:no-repeat;
+        overflow-x:hidden;
     }
 
 
-    /* HERO INHALT */
-    .hero-content{
-        position:relative;
-        width:100%;
-        height:100%;
-        padding:0;
-        display:block;
-    }
-
-
-    /* NAVIGATION */
-  header{
-    position:fixed !important;
-    top:0 !important;
-    left:0 !important;
-
-    width:100% !important;
-    height:70px !important;
-
-    padding:0 !important;
-
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-
-    background:#111 !important;
-
-    z-index:9999 !important;
-}
-
-    nav{
-        width:100%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:14px;
-        flex-wrap:nowrap;
-    }
-
-    nav a{
-        font-size:14px;
-        letter-spacing:1.5px;
-        white-space:nowrap;
-        padding:0;
-    }
-
-/* LOGO */
-.hero-logo{
-    display:block;
-    position:absolute;
-
-    top:21%;
-    left:50%;
-
-    width:82%;
-    max-width:420px;
-    height:auto;
-
-    transform:translateX(-50%);
-
-    z-index:50;
-
-    mix-blend-mode:screen;
-}
-
-
-/* SONGWRITING / COLLABORATIVE PRODUCTION */
-.hero-content p{
-    position:absolute !important;
-
-    top:40% !important;
-    left:46% !important;
-
-    width:90% !important;
-
-    transform:translateX(-50%) !important;
-
-    margin:0 !important;
-    padding:0 !important;
-
-    text-align:center !important;
-
-    color:white !important;
-
-    font-size:13px !important;
-    line-height:1.3 !important;
-    font-weight:500 !important;
-
-    z-index:60 !important;
-}
-    /* AKTUELLER SONG */
-    .hero-latest{
-        position:absolute !important;
-
-        top:auto !important;
-        right:0 !important;
-        bottom:21% !important;
-        left:0 !important;
-
-        width:100% !important;
-
-        display:flex !important;
-        flex-direction:column !important;
-        align-items:center !important;
-        justify-content:center !important;
-
-        gap:5px !important;
-
-        text-align:center;
-        z-index:100;
-    }
-
-    .hero-latest span{
-        display:block !important;
-
-        font-size:17px !important;
-        line-height:1.2 !important;
-        margin:0 !important;
-    }
-
-    .hero-latest strong{
-        display:block !important;
-
-        font-size:30px !important;
-        line-height:1.2 !important;
-        margin:0 !important;
-    }
-
-
-    /* PLAY BUTTON */
-    .hero-latest a{
-        display:flex !important;
-
-        align-items:center;
-        justify-content:center;
-
-        width:82px !important;
-        height:82px !important;
-
-        margin:10px 0 0 0 !important;
-
-        background:#a000ff !important;
-        border-radius:50% !important;
-
-        color:white !important;
-
-        font-size:42px !important;
-        line-height:1 !important;
-
-        text-decoration:none !important;
-
-        z-index:110;
-    }
-
-
-    /* SOCIAL / STREAMING ICONS */
-    .hero-icons{
-        position:absolute;
-
-        left:0;
-        bottom:5.5%;
-
-        width:100%;
-
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-        gap:20px;
-
-        z-index:100;
-    }
-
-    .hero-icons a{
-        font-size:30px;
-        line-height:1;
-    }
-
-}
-/* ==================================================
-   STORY POPUP
-   ================================================== */
-
-.modal{
-    display:none;
-    position:fixed;
-    z-index:3000;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.75);
-
-    align-items:center;
-    justify-content:center;
-
-    padding:20px;
-}
-
-.modal-content{
-    position:relative;
-
-    width:100%;
-    max-width:520px;
-
-    max-height:80vh;
-    overflow-y:auto;
-
-    background:#222;
-
-    color:white;
-
-    padding:35px 30px 30px;
-
-    border-radius:22px;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.6);
-}
-
-.modal-content h2{
-    margin:0 0 20px;
-    font-size:30px;
-}
-
-.modal-content h3{
-    margin:0 0 18px;
-    font-size:24px;
-    line-height:1.3;
-}
-
-.modal-content p{
-    margin:0;
-    font-size:18px;
-    line-height:1.6;
-    color:#ddd;
-}
-
-.close{
-    position:absolute;
-
-    top:10px;
-    right:18px;
-
-    font-size:32px;
-    line-height:1;
-
-    cursor:pointer;
-
-    color:#bbb;
-}
-
-.close:hover{
-    color:white;
-}
-
-
-/* ---------- STORY POPUP HANDY TEST ---------- */
-
-@media (max-width:600px){
-
-    #storyModal{
+    /* ----------------------------------------------
+       NAVIGATION
+       ---------------------------------------------- */
+
+    header{
         position:fixed !important;
-        inset:0 !important;
-
-        width:100vw !important;
-        height:100vh !important;
-
-        justify-content:center !important;
-        align-items:center !important;
-
-        padding:20px !important;
-
-        box-sizing:border-box !important;
-
-        z-index:999999 !important;
-    }
-
-    #storyModal .modal-content{
-        position:relative !important;
-
-        width:calc(100vw - 40px) !important;
-        max-width:340px !important;
-
-        margin:0 !important;
-
-        padding:25px 20px !important;
-
-        box-sizing:border-box !important;
-
-        max-height:75vh !important;
-        overflow-y:auto !important;
-    }
-
-}
-/* ==================================================
-   ÜBER – MOBILE FINAL
-================================================== */
-
-@media (max-width:600px){
-
-    #about{
-        width:100% !important;
-        min-height:0 !important;
-        height:auto !important;
-        padding:0 !important;
-        margin:0 !important;
-        overflow:visible !important;
-        background:#171717 !important;
-    }
-
-    #about .about-container{
-        width:100% !important;
-        max-width:none !important;
-        height:auto !important;
-        margin:0 !important;
-        padding:0 !important;
-
-        display:flex !important;
-        flex-direction:column !important;
-        gap:0 !important;
-    }
-
-    #about .about-image{
-        width:100% !important;
-        height:40svh !important;
-        min-height:0 !important;
-
-        flex:none !important;
-
-        display:block !important;
-        object-fit:cover !important;
-        object-position:center center !important;
-
-        border-radius:0 !important;
-        box-shadow:none !important;
-    }
-
-    #about .about-text{
-        width:100% !important;
-        height:auto !important;
-        min-height:60svh !important;
-
-        flex:none !important;
-
-        padding:25px 22px 40px !important;
-
-        overflow:visible !important;
-
-        text-align:center !important;
-        box-sizing:border-box !important;
-    }
-
-   #about .about-text h2{
-    font-size:22px !important;
-    margin-bottom:18px !important;
-    letter-spacing:0 !important;
-    white-space:nowrap !important;
-}
-
-    #about .about-text p{
-        font-size:15px !important;
-        line-height:1.5 !important;
-        margin:0 0 14px 0 !important;
-    }
-}
-
-/* ==================================================
-   KONTAKT – MOBILE
-   ================================================== */
-
-@media (max-width:600px){
-
-    #contact{
-        min-height:100svh !important;
-        height:100svh !important;
-        padding:0 !important;
-        overflow:hidden !important;
-
-        display:flex !important;
-        flex-direction:column !important;
-    }
-
-    #contact .about-container{
-        width:100% !important;
-        max-width:none !important;
-        height:100% !important;
-
-        margin:0 !important;
-        padding:0 !important;
-
-        display:flex !important;
-        flex-direction:column !important;
-        gap:0 !important;
-    }
-
-    #contact .about-image{
-        width:100% !important;
-        height:45svh !important;
-
-        flex:none !important;
-
-        object-fit:cover !important;
-        border-radius:0 !important;
-        box-shadow:none !important;
-    }
-
-    #contact .about-text{
-        width:100% !important;
-        height:55svh !important;
-
-        flex:none !important;
-
-        padding:25px 22px 30px !important;
-
-        overflow-y:auto !important;
-
-        text-align:center !important;
-    }
-
-    #contact .about-text h2{
-        font-size:28px !important;
-        margin-bottom:18px !important;
-    }
-
-    #contact .about-text p{
-        font-size:15px !important;
-        line-height:1.5 !important;
-        margin-bottom:14px !important;
-    }
-
-    #contact .contact-mail a{
-        font-size:18px !important;
-    }
-
-}   
-/* ==================================================
-   MOBILE NAVIGATION – FINAL TEST
-   ================================================== */
-
-@media (max-width:600px){
-
-    body > header{
-        position:fixed !important;
-        display:flex !important;
 
         top:0 !important;
         left:0 !important;
 
-        width:100vw !important;
-        height:70px !important;
+        width:100% !important;
 
-        padding:20px 8px !important;
+        height:64px !important;
+
+        padding:0 10px !important;
+
+        display:flex !important;
 
         justify-content:center !important;
         align-items:center !important;
 
-        background:rgba(0,0,0,0.35) !important;
+        background:rgba(17,17,17,.96) !important;
 
-        z-index:999999 !important;
+        z-index:10000 !important;
     }
 
-    body > header nav{
-        display:flex !important;
-
+    nav{
         width:100% !important;
+
+        display:flex !important;
 
         justify-content:space-between !important;
         align-items:center !important;
@@ -1164,45 +693,589 @@ flex-direction:column;
         flex-wrap:nowrap !important;
     }
 
-    body > header nav a{
-        display:block !important;
+    nav a{
+        flex:0 0 auto !important;
 
-        color:white !important;
+        font-size:12px !important;
 
-        font-size:11px !important;
-        letter-spacing:1px !important;
+        letter-spacing:1.2px !important;
 
         white-space:nowrap !important;
 
-        opacity:1 !important;
-        visibility:visible !important;
-
         padding:0 !important;
         margin:0 !important;
+
+        border-bottom:none !important;
     }
 
-}
-/* ==================================================
-   ÜBER – MEHR PLATZ FÜR DEN LETZTEN TEXT
-   ================================================== */
 
-@media (max-width:600px){
+    /* ----------------------------------------------
+       HERO
+       ---------------------------------------------- */
+
+    .hero{
+        height:100svh;
+
+        width:100%;
+
+        overflow:hidden;
+
+        background-size:cover;
+
+        background-position:70% center;
+
+        background-repeat:no-repeat;
+    }
+
+    .hero-content{
+        position:relative;
+
+        width:100%;
+        height:100%;
+
+        padding:0 15px 50px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-end;
+        align-items:center;
+
+        overflow:hidden;
+    }
+
+
+    /* LOGO */
+
+    .hero-logo{
+        display:block !important;
+
+        position:absolute !important;
+
+        top:115px !important;
+
+        left:50% !important;
+
+        transform:translateX(-50%) !important;
+
+        width:78% !important;
+
+        max-width:380px !important;
+
+        height:auto !important;
+
+        z-index:10 !important;
+
+        mix-blend-mode:screen !important;
+    }
+
+
+    /* ZUSATZTEXT */
+
+    .hero-content::before{
+        display:block !important;
+
+        content:"Songwriting & Collaborative Production.";
+
+        position:absolute !important;
+
+        top:315px !important;
+
+        left:50% !important;
+
+        transform:translateX(-50%) !important;
+
+        width:100% !important;
+
+        text-align:center !important;
+
+        color:white !important;
+
+        font-size:15px !important;
+
+        font-weight:600 !important;
+
+        letter-spacing:.2px !important;
+
+        white-space:nowrap !important;
+
+        z-index:11 !important;
+    }
+
+
+    /* HERO – AKTUELLER SONG */
+
+    .hero-latest{
+        position:absolute !important;
+
+        left:0 !important;
+        right:0 !important;
+
+        bottom:145px !important;
+
+        width:100% !important;
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:center !important;
+
+        justify-content:center !important;
+
+        gap:5px !important;
+
+        z-index:50 !important;
+
+        text-align:center !important;
+    }
+
+    .hero-latest span{
+        font-size:17px !important;
+
+        line-height:1.2 !important;
+
+        color:white !important;
+    }
+
+    .hero-latest strong{
+        font-size:30px !important;
+
+        line-height:1.15 !important;
+
+        color:white !important;
+    }
+
+    .hero-latest a{
+        display:flex !important;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        width:70px !important;
+        height:70px !important;
+
+        margin:8px 0 0 0 !important;
+
+        background:#a000ff !important;
+
+        color:white !important;
+
+        border:0 !important;
+
+        border-radius:50% !important;
+
+        font-size:36px !important;
+
+        line-height:1 !important;
+
+        text-decoration:none !important;
+    }
+
+
+    /* HERO – SOCIAL ICONS */
+
+    .hero-icons{
+        position:absolute !important;
+
+        left:50% !important;
+
+        bottom:45px !important;
+
+        transform:translateX(-50%) !important;
+
+        width:100% !important;
+
+        display:flex !important;
+
+        justify-content:center !important;
+
+        align-items:center !important;
+
+        gap:15px !important;
+
+        z-index:50 !important;
+    }
+
+    .hero-icons a{
+        font-size:29px !important;
+
+        color:white !important;
+    }
+
+
+    /* ----------------------------------------------
+       ÜBER – MOBILE
+       ---------------------------------------------- */
+
+    #about{
+        min-height:0 !important;
+
+        height:auto !important;
+
+        padding:64px 0 0 0 !important;
+
+        background:#171717 !important;
+
+        overflow:visible !important;
+    }
+
+    #about .about-container{
+        width:100% !important;
+
+        max-width:none !important;
+
+        margin:0 !important;
+
+        padding:0 !important;
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:stretch !important;
+
+        gap:0 !important;
+    }
+
+    #about .about-image{
+        width:100% !important;
+
+        height:45svh !important;
+
+        min-height:0 !important;
+
+        flex:none !important;
+
+        object-fit:cover !important;
+
+        object-position:center center !important;
+
+        border-radius:0 !important;
+
+        box-shadow:none !important;
+
+        display:block !important;
+    }
 
     #about .about-text{
-        min-height:75svh !important;
-        padding-bottom:55px !important;
+        width:100% !important;
+
+        height:auto !important;
+
+        min-height:55svh !important;
+
+        flex:none !important;
+
+        padding:35px 22px 45px !important;
+
+        text-align:center !important;
+
+        overflow:visible !important;
     }
 
-}
-/* ==================================================
-   MOBILE NAVIGATION – PLATZ FÜR ÜBER & KONTAKT
-   ================================================== */
+    #about .about-text h2{
+        font-size:34px !important;
 
-@media (max-width:600px){
+        line-height:1.15 !important;
 
-    #about,
+        margin-bottom:30px !important;
+
+        letter-spacing:0 !important;
+
+        white-space:nowrap !important;
+    }
+
+    #about .about-text p{
+        font-size:17px !important;
+
+        line-height:1.6 !important;
+
+        color:#d6d6d6 !important;
+
+        margin-bottom:25px !important;
+    }
+
+    #about .about-highlight{
+        margin-top:5px !important;
+    }
+
+    #about .about-highlight strong{
+        color:#f2c200 !important;
+    }
+
+    #about .about-highlight em{
+        color:#f5f5f5 !important;
+    }
+
+
+    /* ----------------------------------------------
+       KONTAKT – MOBILE
+       ---------------------------------------------- */
+
     #contact{
-        padding-top:80px !important;
+        min-height:0 !important;
+
+        height:auto !important;
+
+        padding:64px 0 0 0 !important;
+
+        background:#111 !important;
+
+        display:block !important;
+
+        overflow:visible !important;
+    }
+
+    #contact .about-container{
+        width:100% !important;
+
+        max-width:none !important;
+
+        margin:0 !important;
+
+        padding:0 !important;
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:stretch !important;
+
+        gap:0 !important;
+    }
+
+    #contact .about-image{
+        width:100% !important;
+
+        height:45svh !important;
+
+        min-height:0 !important;
+
+        flex:none !important;
+
+        object-fit:cover !important;
+
+        object-position:center center !important;
+
+        border-radius:0 !important;
+
+        box-shadow:none !important;
+
+        display:block !important;
+    }
+
+    #contact .about-text{
+        width:100% !important;
+
+        height:auto !important;
+
+        min-height:55svh !important;
+
+        flex:none !important;
+
+        padding:35px 22px 45px !important;
+
+        text-align:center !important;
+
+        overflow:visible !important;
+    }
+
+    #contact .about-text h2{
+        font-size:40px !important;
+
+        line-height:1.15 !important;
+
+        margin-bottom:30px !important;
+
+        letter-spacing:1px !important;
+    }
+
+    #contact .about-text p{
+        font-size:17px !important;
+
+        line-height:1.6 !important;
+
+        color:#ddd !important;
+
+        margin-bottom:25px !important;
+    }
+
+    #contact .contact-mail{
+        margin-top:30px !important;
+    }
+
+    #contact .contact-mail a{
+        display:inline-flex !important;
+
+        align-items:center !important;
+
+        justify-content:center !important;
+
+        gap:10px !important;
+
+        color:#f2c200 !important;
+
+        font-size:20px !important;
+
+        font-weight:600 !important;
+
+        text-decoration:none !important;
+    }
+
+    #contact .contact-mail i{
+        margin-right:0 !important;
+    }
+
+
+    /* ----------------------------------------------
+       RELEASES – MOBILE
+       ---------------------------------------------- */
+
+    #releases{
+        min-height:0 !important;
+
+        padding:100px 20px 60px !important;
+
+        background:#171717 !important;
+    }
+
+    #releases h2{
+        font-size:38px !important;
+
+        margin-bottom:40px !important;
+    }
+
+    .release-grid{
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:center !important;
+
+        justify-content:flex-start !important;
+
+        gap:30px !important;
+    }
+
+    .release-card{
+        width:280px !important;
+
+        max-width:100% !important;
+    }
+
+
+    /* ----------------------------------------------
+       STORY POPUP – MOBILE
+       ---------------------------------------------- */
+
+    .modal{
+        position:fixed !important;
+
+        inset:0 !important;
+
+        width:100vw !important;
+        height:100vh !important;
+
+        display:none;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        padding:20px !important;
+
+        box-sizing:border-box !important;
+
+        z-index:99999 !important;
+    }
+
+    .modal-content{
+        position:relative !important;
+
+        width:calc(100vw - 40px) !important;
+
+        max-width:340px !important;
+
+        max-height:75vh !important;
+
+        overflow-y:auto !important;
+
+        margin:0 !important;
+
+        padding:25px 20px !important;
+
+        box-sizing:border-box !important;
+
+        border-radius:18px !important;
+    }
+
+    .modal-content h2{
+        font-size:24px !important;
+
+        margin-bottom:12px !important;
+    }
+
+    .modal-content h3{
+        font-size:18px !important;
+
+        line-height:1.3 !important;
+
+        margin-bottom:15px !important;
+    }
+
+    .modal-content p{
+        font-size:15px !important;
+
+        line-height:1.5 !important;
+    }
+
+    .close{
+        top:10px !important;
+
+        right:14px !important;
+
+        font-size:28px !important;
+    }
+
+
+    /* ----------------------------------------------
+       FOOTER – MOBILE
+       ---------------------------------------------- */
+
+    .site-footer{
+        font-size:13px !important;
+
+        gap:8px 12px !important;
+
+        padding:20px 15px !important;
+    }
+
+
+    /* ----------------------------------------------
+       RECHTLICHE SEITEN – MOBILE
+       ---------------------------------------------- */
+
+    .legal-page{
+        padding:100px 20px 30px !important;
+    }
+
+    .legal-page h1{
+        font-size:30px !important;
+
+        margin-bottom:20px !important;
+    }
+
+    .legal-page h2{
+        font-size:18px !important;
+
+        margin-top:18px !important;
+    }
+
+    .legal-page p{
+        font-size:14px !important;
+
+        line-height:1.4 !important;
     }
 
 }
