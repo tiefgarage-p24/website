@@ -1279,3 +1279,104 @@ nav a.active{
     }
 
 }
+/* ==================================================
+   MOBILE FEINSCHLIFF – NUR HANDY
+   DESKTOP NICHT VERÄNDERN
+   ================================================== */
+
+@media (max-width:600px){
+
+    /* -------------------------
+       NAVIGATION
+       ------------------------- */
+
+    body > header nav{
+        justify-content:center !important;
+        gap:18px !important;
+    }
+
+    body > header nav a{
+        font-size:11px !important;
+        letter-spacing:1px !important;
+        margin:0 !important;
+        padding:0 !important;
+    }
+
+
+    /* -------------------------
+       ÜBER – TEXT VOLL SICHTBAR
+       ------------------------- */
+
+    #about{
+        height:auto !important;
+        min-height:0 !important;
+        overflow:visible !important;
+    }
+
+    #about .about-text{
+        height:auto !important;
+        min-height:0 !important;
+        padding:30px 22px 55px !important;
+        overflow:visible !important;
+    }
+
+    #about .about-text h2{
+        font-size:28px !important;
+        line-height:1.2 !important;
+        white-space:normal !important;
+        margin-bottom:22px !important;
+    }
+
+    #about .about-text p{
+        font-size:15px !important;
+        line-height:1.5 !important;
+        margin-bottom:18px !important;
+    }
+
+
+    /* -------------------------
+       KONTAKT – TEXT VOLL SICHTBAR
+       ------------------------- */
+
+    #contact{
+        height:auto !important;
+        min-height:0 !important;
+        overflow:visible !important;
+    }
+
+    #contact .about-container{
+        height:auto !important;
+    }
+
+    #contact .about-image{
+        height:40svh !important;
+    }
+
+    #contact .about-text{
+        height:auto !important;
+        min-height:0 !important;
+        padding:30px 22px 55px !important;
+        overflow:visible !important;
+    }
+
+    #contact .about-text h2{
+        font-size:28px !important;
+        line-height:1.2 !important;
+        margin-bottom:22px !important;
+    }
+
+    #contact .about-text p{
+        font-size:15px !important;
+        line-height:1.5 !important;
+        margin-bottom:18px !important;
+    }
+
+    #contact .contact-mail{
+        margin-top:25px !important;
+    }
+
+    #contact .contact-mail a{
+        font-size:18px !important;
+    }
+
+}
