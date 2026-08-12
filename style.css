@@ -1048,4 +1048,72 @@ flex-direction:column;
     }
 }
 
-   
+/* ==================================================
+   KONTAKT – MOBILE
+   ================================================== */
+
+@media (max-width:600px){
+
+    #contact{
+        min-height:100svh !important;
+        height:100svh !important;
+        padding:0 !important;
+        overflow:hidden !important;
+
+        display:flex !important;
+        flex-direction:column !important;
+    }
+
+    #contact .about-container{
+        width:100% !important;
+        max-width:none !important;
+        height:100% !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        display:flex !important;
+        flex-direction:column !important;
+        gap:0 !important;
+    }
+
+    #contact .about-image{
+        width:100% !important;
+        height:45svh !important;
+
+        flex:none !important;
+
+        object-fit:cover !important;
+        border-radius:0 !important;
+        box-shadow:none !important;
+    }
+
+    #contact .about-text{
+        width:100% !important;
+        height:55svh !important;
+
+        flex:none !important;
+
+        padding:25px 22px 30px !important;
+
+        overflow-y:auto !important;
+
+        text-align:center !important;
+    }
+
+    #contact .about-text h2{
+        font-size:28px !important;
+        margin-bottom:18px !important;
+    }
+
+    #contact .about-text p{
+        font-size:15px !important;
+        line-height:1.5 !important;
+        margin-bottom:14px !important;
+    }
+
+    #contact .contact-mail a{
+        font-size:18px !important;
+    }
+
+}   
