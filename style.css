@@ -1153,7 +1153,7 @@ nav a.active{
     .release-grid{
         display:flex !important;
 
-        flex-direction:column !important;
+       flex-direction:column-reverse !important;
 
         align-items:center !important;
 
