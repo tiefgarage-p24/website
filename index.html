@@ -328,126 +328,55 @@ Der Club bewahrte ihn vor einer kriminellen Laufbahn. Hier fand er nicht nur Gle
     </div>
 
 </div>
+
 <script>
+// STORY-POP-UPS
 const storyLinks = document.querySelectorAll(".story-link");
 const storyModal = document.getElementById("storyModal");
 const closeStory = document.querySelector(".close");
 
-const modalTitle = storyModal.querySelector("h3");
-const modalText = storyModal.querySelector("p");
+if (storyModal && closeStory) {
+    const modalTitle = storyModal.querySelector("h3");
+    const modalText = storyModal.querySelector("p");
 
-storyLinks.forEach(link => {
+    storyLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
 
-    link.addEventListener("click", function(e) {
+            if (modalTitle) {
+                modalTitle.textContent = this.dataset.title || "Story";
+            }
 
-        e.preventDefault();
+            if (modalText) {
+                modalText.textContent = this.dataset.story || "";
+            }
 
-        modalTitle.textContent = this.dataset.title;
-        modalText.textContent = this.dataset.story;
-
-        storyModal.style.display = "flex";
-
+            storyModal.style.display = "flex";
+        });
     });
 
-});
-
-closeStory.addEventListener("click", function () {
-    storyModal.style.display = "none";
-});
-
-window.addEventListener("click", function (e) {
-    if (e.target === storyModal) {
+    closeStory.addEventListener("click", function () {
         storyModal.style.display = "none";
-    }
-});
-    const comingSoonButton = document.getElementById("comingSoonButton");
+    });
 
-comingSoonButton.addEventListener("click", function(e) {
-    e.preventDefault();
-    const popup = document.createElement("div");
+    window.addEventListener("click", function (e) {
+        if (e.target === storyModal) {
+            storyModal.style.display = "none";
+        }
+    });
+}
 
-popup.innerHTML = `
-  <div style="
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.75);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:9999;
-  ">
-    <div style="
-      background:#1f1f1f;
-      border:2px solid #f5c400;
-      box-shadow:0 0 35px rgba(245,196,0,0.35);
-      border-radius:18px;
-      padding:40px 50px;
-      text-align:center;
-      max-width:420px;
-      width:80%;
-    ">
-      <div style="
-        color:#f5c400;
-        font-size:16px;
-        letter-spacing:3px;
-        margin-bottom:15px;
-      ">
-        TIEFGARAGE
-      </div>
 
-      <h2 style="
-        color:white;
-        font-size:32px;
-        margin:0 0 15px 0;
-      ">
-        COMING SOON
-      </h2>
-
-      <p style="
-        color:#bbb;
-        font-size:20px;
-        margin:0 0 30px 0;
-      ">
-        30.08.2026
-      </p>
-
-      <button id="closeComingSoon" style="
-        background:#f5c400;
-        color:#111;
-        border:none;
-        border-radius:50px;
-        padding:12px 30px;
-        font-size:16px;
-        font-weight:bold;
-        cursor:pointer;
-      ">
-        OK
-      </button>
-    </div>
-  </div>
-`;
-
-document.body.appendChild(popup);
-
-document.getElementById("closeComingSoon").addEventListener("click", function() {
-  popup.remove();
-});
-});
-    
 // AKTUELLEN SONG AUTOMATISCH AUS DEN RELEASES ÜBERNEHMEN
+// Es wird die letzte Releasecard mit einem Spotify-Link verwendet.
 
 const heroLatestTitle = document.getElementById("heroLatestTitle");
 const heroLatestButton = document.getElementById("heroLatestButton");
-
 const releaseCards = document.querySelectorAll(".release-card");
 
 let latestReleasedCard = null;
 
-// Von hinten nach vorne suchen:
-// Der letzte veröffentlichte Release mit Spotify-Link
-// wird automatisch als aktueller Song verwendet.
 for (let i = releaseCards.length - 1; i >= 0; i--) {
-
     const card = releaseCards[i];
     const playButton = card.querySelector(".play-button");
 
@@ -461,20 +390,19 @@ for (let i = releaseCards.length - 1; i >= 0; i--) {
     }
 }
 
-if (latestReleasedCard) {
-
+if (latestReleasedCard && heroLatestTitle && heroLatestButton) {
     const title = latestReleasedCard.querySelector("h3");
     const playButton = latestReleasedCard.querySelector(".play-button");
 
     if (title && playButton) {
-
         heroLatestTitle.textContent = title.textContent.trim();
-
         heroLatestButton.href = playButton.href;
         heroLatestButton.target = "_blank";
-
+        heroLatestButton.rel = "noopener noreferrer";
     }
-}</script>
+}
+</script>
+
     <footer class="site-footer">
 
     <span>© Tiefgarage P-24</span>
