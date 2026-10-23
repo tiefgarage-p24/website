@@ -361,15 +361,16 @@ nav a.active{
     margin-bottom:70px;
 }
 
+
 .release-grid{
     display:flex;
-
+    flex-direction:row-reverse;
     justify-content:center;
-
     gap:40px;
-
     flex-wrap:wrap;
 }
+
+
 
 .release-card{
     width:220px;
