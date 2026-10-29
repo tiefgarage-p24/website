@@ -362,12 +362,25 @@ nav a.active{
 }
 
 
-.release-grid{
-    display:flex;
-    flex-direction:row-reverse;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
+
+.release-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.release-card {
+    width: 220px;
+    flex: 0 0 220px;
+}
+
 }
 
 
