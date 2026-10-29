@@ -376,6 +376,32 @@ nav a.active{
     padding-bottom: 20px;
 }
 
+/* RELEASES – GOLDENER SCROLLBALKEN */
+.release-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #f2c200 #303030;
+}
+
+.release-grid::-webkit-scrollbar {
+    height: 10px;
+}
+
+.release-grid::-webkit-scrollbar-track {
+    background: #303030;
+    border-radius: 10px;
+}
+
+.release-grid::-webkit-scrollbar-thumb {
+    background: #f2c200;
+    border-radius: 10px;
+}
+
+.release-grid::-webkit-scrollbar-thumb:hover {
+    background: #ffd84d;
+}
+
+
+
 .release-card {
     width: 220px;
     flex: 0 0 220px;
